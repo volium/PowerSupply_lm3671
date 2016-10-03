@@ -3,6 +3,9 @@
 
 ** Found 0 DRC errors **
 
-** Found 0 unconnected pads **
+** Found 1 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (69.750 mm,160.400 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of P2 net GND
+    @ (61.550 mm,160.800 mm): Pad 2 on F.Cu, Non-copper of R1
 
 ** End of Report **
