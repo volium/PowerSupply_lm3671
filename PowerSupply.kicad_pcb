@@ -9,7 +9,7 @@
     (tracks 65)
     (zones 0)
     (modules 10)
-    (nets 6)
+    (nets 9)
   )
 
   (page A4)
@@ -86,6 +86,9 @@
   (net 3 +3V3)
   (net 4 "Net-(L1-Pad1)")
   (net 5 "Net-(D1-Pad1)")
+  (net 6 "Net-(P1-Pad2)")
+  (net 7 "Net-(P1-Pad3)")
+  (net 8 "Net-(P1-Pad4)")
 
   (net_class Default "This is the default net class."
     (clearance 0.1524)
@@ -96,6 +99,9 @@
     (uvia_drill 0.508)
     (add_net "Net-(D1-Pad1)")
     (add_net "Net-(L1-Pad1)")
+    (add_net "Net-(P1-Pad2)")
+    (add_net "Net-(P1-Pad3)")
+    (add_net "Net-(P1-Pad4)")
   )
 
   (net_class Power ""
@@ -194,9 +200,12 @@
     (fp_line (start 4.59994 -3.85064) (end -4.59994 -3.85064) (layer F.SilkS) (width 0.15))
     (pad 1 smd rect (at 3.44932 -1.6002) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask)
       (net 1 VCC))
-    (pad 2 smd rect (at 3.44932 -0.8001) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask))
-    (pad 3 smd rect (at 3.44932 0) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask))
-    (pad 4 smd rect (at 3.44932 0.8001) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask))
+    (pad 2 smd rect (at 3.44932 -0.8001) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask)
+      (net 6 "Net-(P1-Pad2)"))
+    (pad 3 smd rect (at 3.44932 0) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask)
+      (net 7 "Net-(P1-Pad3)"))
+    (pad 4 smd rect (at 3.44932 0.8001) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask)
+      (net 8 "Net-(P1-Pad4)"))
     (pad 5 smd rect (at 3.44932 1.6002) (size 2.30124 0.50038) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
     (pad 6 smd rect (at 3.35026 -4.45008) (size 2.49936 1.99898) (layers F.Cu F.Paste F.Mask)
@@ -338,7 +347,7 @@
     (fp_text reference C2 (at 2.59 0 270) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
-    (fp_text value 10uF (at 0 2.3 180) (layer F.Fab)
+    (fp_text value 22uF (at 0 2.3 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1.6 0.8) (end -1.6 -0.8) (layer F.Fab) (width 0.15))

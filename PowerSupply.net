@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source C:\Github\PowerSupply\PowerSupply.sch)
-    (date "10/5/2016 9:05:49 AM")
-    (tool "Eeschema 4.0.3-stable")
+    (source C:/Github/PowerSupply/PowerSupply.sch)
+    (date "11/26/2016 8:42:13 AM")
+    (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -34,7 +34,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 57CE1EC6))
     (comp (ref C2)
-      (value 10uF)
+      (value 22uF)
       (footprint Capacitors_SMD:C_1206)
       (libsource (lib device) (part C))
       (sheetpath (names /) (tstamps /))
@@ -161,12 +161,12 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name shield) (type passive)))))
   (libraries
+    (library (logical LM3671MF-3.3)
+      (uri C:\Users\rotorres\Desktop\LM3671MF-3.3\LM3671MF-3.3.lib))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical LM3671MF-3.3)
-      (uri C:\Users\rotorres\Desktop\LM3671MF-3.3\LM3671MF-3.3.lib)))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
   (nets
     (net (code 1) (name +3V3)
       (node (ref P2) (pin 2))
