@@ -28,7 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LM3671MF-3.3
+LIBS:volium
 LIBS:PowerSupply-cache
 EELAYER 25 0
 EELAYER END

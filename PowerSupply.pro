@@ -1,4 +1,4 @@
-update=9/5/2016 8:35:43 PM
+update=12/1/2016 10:43:18 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=C:/Github/kicadlib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=C:/Users/rotorres/Desktop/LM3671MF-3.3/LM3671MF-3.3
+LibName30=volium

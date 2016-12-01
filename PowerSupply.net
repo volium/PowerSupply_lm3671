@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Github/PowerSupply/PowerSupply.sch)
-    (date "11/26/2016 8:42:13 AM")
+    (date "12/1/2016 11:03:19 AM")
     (tool "Eeschema 4.0.4-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -18,7 +18,7 @@
     (comp (ref U1)
       (value LM3671MF-3.3)
       (footprint TO_SOT_Packages_SMD:SOT-23-5)
-      (libsource (lib LM3671MF-3.3) (part LM3671MF-3.3))
+      (libsource (lib volium) (part LM3671MF-3.3))
       (sheetpath (names /) (tstamps /))
       (tstamp 57CE1DA6))
     (comp (ref P1)
@@ -117,11 +117,17 @@
       (pins
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name A) (type passive))))
-    (libpart (lib LM3671MF-3.3) (part LM3671MF-3.3)
+    (libpart (lib volium) (part LM3671MF-3.3)
       (fields
         (field (name Reference) U)
         (field (name Value) LM3671MF-3.3)
-        (field (name Footprint) SOT95P284X122-5N))
+        (field (name Footprint) SOT95P284X122-5N)
+        (field (name Datasheet) "Texas Instruments")
+        (field (name Price) "0.54 USD")
+        (field (name Availability) Good)
+        (field (name Package) "SOT-23 Texas Instruments")
+        (field (name MP) LM3671MF-3.3/NOPB)
+        (field (name Description) "Converter DC-DC Single Step Down 2.7V to 5.5V 5-Pin SOT-23 T/R"))
       (pins
         (pin (num 1) (name VIN) (type input))
         (pin (num 2) (name GND) (type passive))
@@ -161,10 +167,10 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name shield) (type passive)))))
   (libraries
-    (library (logical LM3671MF-3.3)
-      (uri C:\Users\rotorres\Desktop\LM3671MF-3.3\LM3671MF-3.3.lib))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical volium)
+      (uri C:\Github\kicadlib\volium.lib))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
   (nets
